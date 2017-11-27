@@ -1,142 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-  <link rel="stylesheet" href="content.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Venta Telefónica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/slick.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="content">
-  <main >
-    <div class="container">
-      <div class=" col-md-12 ">
+<div class="wrpVenta">
+  <div class="container">
+    <div class="menu-header hidden-xs">
+      <nav class="">
+        <ul class="">
+          <li class="item item-inicio"><a class="font-menu" href="">PREGUNTAS</a></li>
+          <li class="item item-despacho"><a class="font-menu" href="">DESPACHO</a></li>
+          <li class="item item-preguntas"><a class="font-menu" href="">INICIO</a></li>
+        </ul>
+      </nav>
+    </div>
 
-        <div class="container">
-          <div class="menu-header hidden-xs">
-            <nav class="">
-              <ul class="">
-                <li class="item item-inicio"><a class="font-menu" href="">PREGUNTAS</a></li>
-                <li class="item item-despacho"><a class="font-menu" href="">DESPACHO</a></li>
-                <li class="item item-preguntas"><a class="font-menu" href="">INICIO</a></li>
-              </ul>
-            </nav>
-          </div>
+  </div>
 
-        </div>
-        <div class="container">
-          <div class="info-venta">
-            <div class="">
-              <img class="text-center" src="assets/img/venta_telefonica.png" style="display:block ; margin:0 auto" alt=""><br>
-              <span class="text-center subtitle-info" style="display:block">¡Ahora con nuestra Venta Telefónica, Sodimac va a tu casa!</span>
-              <p class="text-center text-info">Ahorra tiempo comprando todo lo que necesitas y nosotros lo dejamos <br>en tu casa o retíralo en cualquier tienda Sodimac de tu elección</p>
+  <div class="ventaIntro">
+    <img src="images/venta_telefonica.png" alt="">
+    <!-- <span>¡Por Cyberdays, horario extendido hasta las 2am!</span> -->
+    <span>¡Ahora con nuestra Venta Telefónica, Sodimac va a tu casa!</span>
+    <p>Ahorra tiempo comprando todo lo que necesitas y nosotros lo dejamos <br>en tu casa o retíralo en cualquier tienda Sodimac de tu elección</p>
+  </div>
+
+  <!--BANNER -->
+  <div class="ventaBanner">
+    <img class="banWeb" src="images/ban_telefonica.png" alt="">
+    <img class="banMov" src="images/ban_telefonica_movil.png" alt="">
+  </div>
+
+
+
+  <!--BENEFICIOS -->
+  <div class="ventaBeneficios">
+
+    <!--SLIDER -->
+    <section id="slider">
+      <div class="ventaSlider">
+        <img class="picWeb" src="images/beneficios/pic01.jpg" alt="">
+        <img class="picMov" src="images/beneficios/pic01_mov.jpg" alt="">
+        <!--BAR WHITE -->
+        <div class="contSlider">
+          <!--GROUP -->
+          <div class="groupCols">
+            <!--ICONS -->
+            <div class="colPic">
+              <img src="images/beneficios/ico_asesoria.png" alt="">
+            </div>
+            <!--CONTENT -->
+            <div class="colCont">
+              <h4>ASESORÍA CON EXPERTOS</h4>
+              <p>Realiza tus compras por Venta Telefónica y recibe la asesoría de un especialista que te brindará toda la información necesaria para tus proyectos.</p>
             </div>
           </div>
 
-
-        </div>
-        <div class="container">
-          <div class="div-call text-center">
-            <img class=" text-center hidden-xs hidden-sm" src="assets/img/ban_telefonica.png" alt="">
-            <img class=" text-center hidden-lg hidden-md img-responsive" src="assets/img/ban_telefonica_movil.png" alt="">
-          </div>
-        </div>
-        <!--<div class="container">
-          <div class="slider">
-
-          </div>
-        </div>-->
-
-        <div class="container">
-          <div class="ubicanos">
-            <div class="row pad">
-              <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">
-                <div class="div-input">
-                  <img class="img-responsive" src="assets/img/despacho/t_despacho.png" alt="">
-
-                </div>
-                <div class="" style="display:block">
-                  <p class="text-mapa">Conoce todos los lugares donde ofrecemos nuestro servicio de Despacho:</p>
-                  <select class="selectLima" name="">
-                    <option value="" selected >TIENDA EN LIMA Y CALLAO</option>
-                    <option value="">LIMA</option>
-                    <option value="">TACNA</option>
-                  </select>
-                  <select class="selectProvincia" name="">
-                    <option selected value="">TIENDA EN PROVINCIA</option>
-                    <option value=""></option>
-                    <option value="">AREQUIPA</option>
-                    <option value="">LIMA</option>
-                  </select>
-
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">
-                <div class="div-mapa">
-                  <img class="img-responsive" src="assets/img/despacho/pic_mapa.png" alt="">
-                </div>
-              </div>
-
-            </div>
+          <!--PAGINATOR -->
+          <div class="paginator">
+            <span class="active" onclick="events.goToSlider(0);"></span>
+            <span onclick="events.goToSlider(1);"></span>
+            <span onclick="events.goToSlider(2);"></span>
+            <span onclick="events.goToSlider(3);"></span>
+            <span onclick="events.goToSlider(4);"></span>
+            <span onclick="events.goToSlider(5);"></span>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 ">
-              <div class="div-banner">
-              </div>
-
+        <!--BUTTON -->
+        <div class="groupBtn">
+          <span class="btnPrev"></span>
+          <span class="btnNext"></span>
+        </div>
+      </div>
+      <div class="ventaSlider">
+        <img class="picWeb" src="images/beneficios/pic02.jpg" alt="">
+        <img class="picMov" src="images/beneficios/pic02_mov.jpg" alt="">
+        <!--BAR WHITE -->
+        <div class="contSlider">
+          <!--GROUP -->
+          <div class="groupCols">
+            <!--ICONS -->
+            <div class="colPic">
+              <img src="images/beneficios/ico_retiro.png" alt="">
             </div>
+            <!--CONTENT -->
+            <div class="colCont">
+              <h4>RETIRO EN TIENDA GRATUITO</h4>
+              <p>Realiza tus compras con total seguridad por Venta telefónica y retira en cualquiera de nuestras tiendas de forma gratuita (previa coordinación).</p>
+            </div>
+          </div>
+
+          <!--PAGINATOR -->
+          <div class="paginator">
+            <span onclick="events.goToSlider(0);"></span>
+            <span class="active" onclick="events.goToSlider(1);"></span>
+            <span onclick="events.goToSlider(2);"></span>
+            <span onclick="events.goToSlider(3);"></span>
+            <span onclick="events.goToSlider(4);"></span>
+            <span onclick="events.goToSlider(5);"></span>
           </div>
         </div>
-
-        <div class="container">
-          <div class="acordion">
-            <!--ITEM 01 -->
-            <div class="opcion">
-              <h5 class="text-opcion">¿CUÁL ES EL HORARIO DE ATENCIÓN?</h5>
-              <p style="display: none;">Disponible a nivel nacional de lunes a sábado de 8:00 a. m. a 10:00 p. m. y domingos de 9:00 a. m. a 10:00 p. m.</p>
+        <!--BUTTON -->
+        <div class="groupBtn">
+          <span class="btnPrev"></span>
+          <span class="btnNext"></span>
+        </div>
+      </div>
+      <div class="ventaSlider">
+        <img class="picWeb" src="images/beneficios/pic03.jpg" alt="">
+        <img class="picMov" src="images/beneficios/pic03_mov.jpg" alt="">
+        <!--BAR WHITE -->
+        <div class="contSlider">
+          <!--GROUP -->
+          <div class="groupCols">
+            <!--ICONS -->
+            <div class="colPic">
+              <img src="images/beneficios/ico_atencion.png" alt="">
             </div>
-            <!--ITEM 02 -->
-            <div class="opcion">
-              <h5 class="text-opcion">¿CUÁL ES LA COBERTURA DE DESPACHO?</h5>
-              <p style="display: none;">La cobertura de despacho es para todas las provincias donde exista SODIMAC a excepción de Pucallpa. Descubre todas nuestras sedes <a href="#">aquí</a>.</p>
-            </div>
-            <!--ITEM 03 -->
-            <div class="opcion">
-              <h5 class="icoClose">¿PUEDO RECOGER LOS PRODUCTOS EN TIENDAS DE SODIMAC?</h5>
-              <p style="display: block;">Sí, ahorra el costo de envío y ven a recoger tus productos en todas las tiendas, excepto Pucallpa. <span>Venta y entrega de productos sujeto a la disponibilidad de stock en cada tienda.</span></p>
-            </div>
-            <!--ITEM 04 -->
-            <div class="opcion">
-              <h5 class="text-opcion">NO TENGO TARJETA DE CRÉDITO, ¿CÓMO PUEDO HACER?</h5>
-              <p style="display: none;">Contamos con despacho a contra entrega (revisar condiciones de servicios de despacho), depósitos en cuenta bancaria, transferencia y a través de la recaudadora Pago Efectivo.</p>
-            </div>
-            <!--ITEM 05 -->
-            <div class="opcion none">
-              <h5 class="text-opcion">COMPRA DESDE EL EXTRANJERO</h5>
-              <p style="display: none;">Puedes realizar la compra desde el extranjero y enviarlo a una dirección en Perú de acuerdo a la disponibilidad de zonas de despacho.</p>
+            <!--CONTENT -->
+            <div class="colCont">
+              <h4>ATENCIÓN INMEDIATA</h4>
+              <p>Te atenderemos de forma inmediata y personalizada, te brindaremos toda la información requerida sobre los producto o servicios que necesites. ¡Sabemos que tu tiempo es importante!</p>
             </div>
           </div>
 
+          <!--PAGINATOR -->
+          <div class="paginator">
+            <span onclick="events.goToSlider(0);"></span>
+            <span onclick="events.goToSlider(1);"></span>
+            <span class="active" onclick="events.goToSlider(2);"></span>
+            <span onclick="events.goToSlider(3);"></span>
+            <span onclick="events.goToSlider(4);"></span>
+            <span onclick="events.goToSlider(5);"></span>
+          </div>
+        </div>
+        <!--BUTTON -->
+        <div class="groupBtn">
+          <span class="btnPrev"></span>
+          <span class="btnNext"></span>
+        </div>
+      </div>
+      <div class="ventaSlider">
+        <img class="picWeb" src="images/beneficios/pic04.jpg" alt="">
+        <img class="picMov" src="images/beneficios/pic04_mov.jpg" alt="">
+        <!--BAR WHITE -->
+        <div class="contSlider">
+          <!--GROUP -->
+          <div class="groupCols">
+            <!--ICONS -->
+            <div class="colPic">
+              <img src="images/beneficios/ico_ventas.png" alt="">
+            </div>
+            <!--CONTENT -->
+            <div class="colCont">
+              <h4 class="special">ATENCIÓN DE VENTAS <br>CORPORATIVAS / COTIZACIONES</h4>
+              <p class="special">También atendemos los grandes proyectos de tu empresa acorde a las necesidades que esta demande. <br>Además, brindamos servicios de diseño arquitectónico para instalaciones de proyectos, armados en tu casa. <a href="#">CLICK AQUÍ</a></p>
+            </div>
+          </div>
+
+          <!--PAGINATOR -->
+          <div class="paginator">
+            <span onclick="events.goToSlider(0);"></span>
+            <span onclick="events.goToSlider(1);"></span>
+            <span onclick="events.goToSlider(2);"></span>
+            <span class="active" onclick="events.goToSlider(3);"></span>
+            <span onclick="events.goToSlider(4);"></span>
+            <span onclick="events.goToSlider(5);"></span>
+          </div>
+        </div>
+        <!--BUTTON -->
+        <div class="groupBtn">
+          <span class="btnPrev"></span>
+          <span class="btnNext"></span>
+        </div>
+      </div>
+      <div class="ventaSlider">
+        <img class="picWeb" src="images/beneficios/pic05.jpg" alt="">
+        <img class="picMov" src="images/beneficios/pic05_mov.jpg" alt="">
+        <!--BAR WHITE -->
+        <div class="contSlider">
+          <!--GROUP -->
+          <div class="groupCols">
+            <!--ICONS -->
+            <div class="colPic">
+              <img src="images/beneficios/ico_despacho.png" alt="">
+            </div>
+            <!--CONTENT -->
+            <div class="colCont">
+              <h4>DESPACHO A 24 HORAS</h4>
+              <p>Despacho a 24 horas para materiales de construcción (revise condiciones de servicios de despacho).</p>
+            </div>
+          </div>
+
+          <!--PAGINATOR -->
+          <div class="paginator">
+            <span onclick="events.goToSlider(0);"></span>
+            <span onclick="events.goToSlider(1);"></span>
+            <span onclick="events.goToSlider(2);"></span>
+            <span onclick="events.goToSlider(3);"></span>
+            <span class="active" onclick="events.goToSlider(4);"></span>
+            <span onclick="events.goToSlider(5);"></span>
+          </div>
+        </div>
+        <!--BUTTON -->
+        <div class="groupBtn">
+          <span class="btnPrev"></span>
+          <span class="btnNext"></span>
+        </div>
+      </div>
+      <div class="ventaSlider">
+        <img class="picWeb" src=" images/beneficios/pic06.jpg" alt="">
+        <img class="picMov" src=" images/beneficios/pic06_mov.jpg" alt="">
+        <!--BAR WHITE -->
+        <div class="contSlider">
+          <!--GROUP -->
+          <div class="groupCols">
+            <!--ICONS -->
+            <div class="colPic">
+              <img src=" images/beneficios/ico_pago.png" alt="">
+            </div>
+            <!--CONTENT -->
+            <div class="colCont">
+              <h4 class="special">MÚLTIPLES <br>PLATAFORMAS DE PAGO</h4>
+              <p class="special">Aceptamos todas las tarjetas de débito y crédito. Además, ofrecemos despacho a contra entrega (revisar condiciones de servicios de despacho), depósitos en cuenta bancaria, transferencia y a través de la recaudadora Pago Efectivo.</p>
+            </div>
+          </div>
+
+          <!--PAGINATOR -->
+          <div class="paginator">
+            <span onclick="events.goToSlider(0);"></span>
+            <span onclick="events.goToSlider(1);"></span>
+            <span onclick="events.goToSlider(2);"></span>
+            <span onclick="events.goToSlider(3);"></span>
+            <span onclick="events.goToSlider(4);"></span>
+            <span class="active" onclick="events.goToSlider(5);"></span>
+          </div>
+        </div>
+        <!--BUTTON -->
+        <div class="groupBtn">
+          <span class="btnPrev"></span>
+          <span class="btnNext"></span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!--DESPACHO Y RECOJO -->
+  <div class="ventaDespacho">
+
+    <!--GROUP -->
+    <div class="wrpCols">
+
+      <!--LEFT -->
+      <div class="cLeft">
+        <img class="t_despacho" src=" images/despacho/t_despacho.png" alt="">
+        <div class="contDepa">
+          <div class="">
+            <p class="text-mapa">Conoce todos los lugares donde ofrecemos nuestro servicio de Despacho:</p>
+            <select class="selectLima" name="">
+                          <option value="" selected >TIENDA EN LIMA Y CALLAO</option>
+                          <option value="">LIMA</option>
+                          <option value="">TACNA</option>
+                        </select>
+            <select class="selectProvincia" name="">
+                          <option selected value="">TIENDA EN PROVINCIA</option>
+                          <option value=""></option>
+                          <option value="">AREQUIPA</option>
+                          <option value="">LIMA</option>
+                        </select>
+
+          </div>
         </div>
       </div>
 
+      <!--RIGHT -->
+      <div class="cRight">
+        <img src=" images/despacho/pic_mapa.png" alt="">
+      </div>
+
+      <!--CLEAR FIX -->
+      <div class="clear"></div>
+
     </div>
-  </main>
 
-  <!--  <script src="https://code.jquery.com/jquery-3.2.1.js " integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin=" anonymous "></script>
-  <script type="text/javascript " src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script> -->
-  <script src="jquery.min.js"></script>
-  <script src="content.js"></script>
+  </div>
 
-  <script type="text/javascript" src="assets/js/app.js">
-  </script>
-</body>
+  <!--PREGUNTAS -->
+  <div class="ventaPreguntas">
+    <!--BANNER -->
+    <div class="banPreguntas">
+      <img src=" images/preguntas/banner_mov.jpg" alt="">
+    </div>
+    <!--MODULE -->
+    <div class="modAccordion">
+      <!--ITEM 01 -->
+      <div class="itemAccord">
+        <h5 class="icoClose">¿CUÁL ES EL HORARIO DE ATENCIÓN?</h5>
+        <p>Disponible a nivel nacional de lunes a sábado de 8:00 a. m. a 10:00 p. m. y domingos de 9:00 a. m. a 10:00 p. m.</p>
+      </div>
+      <!--ITEM 02 -->
+      <div class="itemAccord">
+        <h5 class="icoPlus">¿CUÁL ES LA COBERTURA DE DESPACHO?</h5>
+        <p style="display: none">La cobertura de despacho es para todas las provincias donde exista SODIMAC a excepción de Pucallpa. Descubre todas nuestras sedes <a href="#">aquí</a>.</p>
+      </div>
+      <!--ITEM 03 -->
+      <div class="itemAccord">
+        <h5 class="icoPlus">¿PUEDO RECOGER LOS PRODUCTOS EN TIENDAS DE SODIMAC?</h5>
+        <p style="display: none">Sí, ahorra el costo de envío y ven a recoger tus productos en todas las tiendas, excepto Pucallpa. <span>Venta y entrega de productos sujeto a la disponibilidad de stock en cada tienda.</span></p>
+      </div>
+      <!--ITEM 04 -->
+      <div class="itemAccord">
+        <h5 class="icoPlus">NO TENGO TARJETA DE CRÉDITO, ¿CÓMO PUEDO HACER?</h5>
+        <p style="display: none">Contamos con despacho a contra entrega (revisar condiciones de servicios de despacho), depósitos en cuenta bancaria, transferencia y a través de la recaudadora Pago Efectivo.</p>
+      </div>
+      <!--ITEM 05 -->
+      <div class="itemAccord none">
+        <h5 class="icoPlus">COMPRA DESDE EL EXTRANJERO</h5>
+        <p style="display: none">Puedes realizar la compra desde el extranjero y enviarlo a una dirección en Perú de acuerdo a la disponibilidad de zonas de despacho.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src=" js/slick.js"></script>
+<script src=" js/app.js"></script>
+
 
 </html>

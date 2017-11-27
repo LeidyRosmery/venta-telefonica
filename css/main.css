@@ -1,0 +1,960 @@
+﻿@charset "utf-8";
+
+@font-face{
+  font-family: 'MisoRegular';
+  src: url('fonts/miso.eot');
+  src: url('fonts/miso.eot?#iefix') format('embedded-opentype'),
+       url('fonts/miso.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'MisoBold';
+  src: url('fonts/miso_bold.eot');
+  src: url('fonts/miso_bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/miso_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'HandOfSeanPro';
+  src: url('fonts/handofseanpro.eot');
+  src: url('fonts/handofseanpro.eot?#iefix') format('embedded-opentype'),
+       url('fonts/handofseanpro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrpVenta{
+  background: #fff;
+  margin: 0 auto;
+  display: none;
+  padding-top: 60px;
+  width: 1000px;
+}
+
+/*********************************************************************
+*** MAIN MENU ********************************************************
+*********************************************************************/
+
+.menu-header nav ul {
+  list-style: none;
+}
+
+.menu-header nav {
+  height: 33px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  background-repeat: no-repeat;
+  width: 125px;
+  text-decoration: none;
+  display: block;
+  float: right;
+  margin: 0 13px;
+  height: 33px;
+}
+
+.item-inicio {
+  background-image: url(../css/images/menu/ico_preguntas.png);
+}
+
+.item-inicio a {
+  padding-left: 33px;
+}
+
+.item-despacho {
+  background-image: url(../css/images/menu/ico_despacho.png);
+}
+
+.item-despacho a {
+  padding-left: 42px;
+}
+.item-preguntas a {
+   color: #fff;
+}
+
+.item-preguntas {
+  background-image: url(../css/images/menu/ico_inicio.png);
+  background-position-y: -33px;
+}
+
+.font-menu {
+  font-family: 'misoregular';
+  line-height: 33px;
+  font-size: 19px;
+  text-decoration: none;
+  color: #0079d7;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+
+.ventaMenu{
+  background: #fff url(../images/logo_sodimac.png) no-repeat 96% 50%;
+  display: block;
+  height: 60px;
+  width: 1000px;
+  margin-top: -60px;
+/*  margin-left: -500px;
+*/  /*position: fixed;
+  top: 0;*/
+  left: 50%;
+  z-index: 1;
+}
+
+.ventaMenu .groupMenu{
+/*  background: orange;*/
+  display: block;
+  margin: 0 auto;
+  padding-top: 14px;
+  overflow: hidden;
+  width: 504px;
+}
+
+.ventaMenu .groupMenu ul{
+
+}
+
+.ventaMenu .groupMenu ul li{ float:left;
+
+}
+
+.ventaMenu .groupMenu ul li a{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  color: #0072ce;
+  line-height: 33px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  outline: none;
+}
+
+.ventaMenu .groupMenu ul li.icoInicio a{
+  background: transparent url(../images/menu/ico_inicio.png) no-repeat 0% 0%;
+  margin-right: 10px;
+  padding-left: 52px;
+  width: 125px;
+}
+
+.ventaMenu .groupMenu ul li.icoInicio a:hover,
+.ventaMenu .groupMenu ul li.icoInicio.active a{
+  background: transparent url(../images/menu/ico_inicio.png) no-repeat 0% -33px;
+  color: #fff;
+}
+
+.ventaMenu .groupMenu ul li.icoDespacho a{
+  background: transparent url(../images/menu/ico_despacho.png) no-repeat 0% 0%;
+  margin-right: 10px;
+  padding-left: 42px;
+  width: 125px;
+}
+
+.ventaMenu .groupMenu ul li.icoDespacho a:hover,
+.ventaMenu .groupMenu ul li.icoDespacho.active a{
+  background: transparent url(../images/menu/ico_despacho.png) no-repeat 0% -33px;
+  color: #fff;
+}
+
+.ventaMenu .groupMenu ul li.icoPreguntas a{
+  background: transparent url(../images/menu/ico_preguntas.png) no-repeat 0% 0%;
+  padding-left: 35px;
+  width: 135px;
+}
+
+.ventaMenu .groupMenu ul li.icoPreguntas a:hover,
+.ventaMenu .groupMenu ul li.icoPreguntas.active a{
+  background: transparent url(../images/menu/ico_preguntas.png) no-repeat 0% -33px;
+  color: #fff;
+}
+
+/*********************************************************************
+*** INTRO ************************************************************
+*********************************************************************/
+.ventaIntro{
+  background: #f1f1f2 url(http://www.sodimac.com.pe/static/categorias/contenidoEstatico/servicioalCliente/venta-telefonica/css/images/texture.png) repeat 0% 0%;
+  display: block;
+  padding: 42px 0px;
+  text-align: center;
+}
+
+.ventaIntro img{
+  display: block;
+  margin: 0 auto;
+}
+
+.ventaIntro span{
+  font-family: "HandOfSeanPro", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #dd0021;
+  display: block;
+  padding-top: 28px;
+}
+
+.ventaIntro p{
+  font-family: "MisoRegular", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #333333;
+  line-height: 24px;
+  display: block;
+  padding-top: 10px;
+}
+
+/*********************************************************************
+*** BANNER ***********************************************************
+*********************************************************************/
+.ventaBanner{
+/*  background: pink;*/
+  display: block;
+  padding: 50px 0px;
+}
+
+.ventaBanner .banWeb{
+  margin: 0 auto;
+  display: block;
+}
+
+.ventaBanner .banMov{
+  margin: 0 auto;
+  display: none;
+}
+
+/*********************************************************************
+*** BENEFICIOS: SLIDER ***********************************************
+*********************************************************************/
+.ventaBeneficios{
+  display: block;
+}
+
+.ventaBeneficios .ventaSlider{
+  display: block;
+  position: relative;
+}
+
+.ventaBeneficios .ventaSlider .picWeb{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.ventaBeneficios .ventaSlider .picMov{
+  display: none;
+  height: auto;
+  width: 100%;
+}
+
+.ventaBeneficios .ventaSlider .contSlider{
+  background: rgba(255, 255, 255, 0.7);
+  display: block;
+  height: 334px;
+  width: 100%;
+  position: absolute;
+  top: 138px;
+  left: 0;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols{
+/*  background: orange;*/
+  margin: 0 auto;
+  display: block;
+  padding-top: 68px;
+  width: 520px;
+  overflow: hidden;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colPic{
+  display: block;
+  float: left;
+  padding-top: 18px;
+  width: 234px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colPic img{
+  padding-left: 16px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont{
+  background: transparent url(../images/slider/bars.png) no-repeat 0% 0%;
+  display: block;
+  float: left;
+  padding-left: 25px;
+  height: 195px;
+  width: 261px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont h4{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: #dd0021;
+  display: block;
+  padding: 10px 0px 30px 0px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont h4.special{
+  font-size: 23px;
+  padding: 0px 0px 10px 0px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont p{
+  font-family: "MisoRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  padding-right: 50px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont p.special{
+  padding-right: 35px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont a{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  color: #dd0021;
+  text-decoration: none;
+  outline: none;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .groupCols .colCont a:hover{
+  text-decoration: underline;
+}
+
+/* - PAGINATOR - */
+.ventaBeneficios .ventaSlider .contSlider .paginator{
+/*  background: pink;*/
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 140px;
+  overflow: hidden;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .paginator span{
+  background: #a1a1a1;
+  cursor: pointer;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  margin: 0 8px;
+  height: 7px;
+  width: 7px;
+}
+
+.ventaBeneficios .ventaSlider .contSlider .paginator span.active{
+  background: #333333;
+}
+
+/* - BUTTON - */
+.ventaBeneficios .ventaSlider .groupBtn{
+
+}
+
+.ventaBeneficios .ventaSlider .groupBtn .btnPrev{
+  background: url(../css/images/slider/btn.png) no-repeat 0% -29px;
+  cursor: pointer;
+  display: block;
+  height: 29px;
+  width: 29px;
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+.ventaBeneficios .ventaSlider .groupBtn .btnNext{
+  background: transparent url(../css/images/slider/btn.png) no-repeat 0% 0%;
+  cursor: pointer;
+  display: block;
+  height: 29px;
+  width: 29px;
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+/*********************************************************************
+*
+/*********************************************************************
+*** DESPACHO Y RECOJO ************************************************
+*********************************************************************/
+.ventaDespacho{
+  background: #f1f1f2;
+  display: block;
+}
+
+.ventaDespacho .wrpCols{
+/*  background: orange;*/
+  display: block;
+  margin: 0 auto;
+  padding: 80px 0px;
+  width: 736px;
+}
+
+.ventaDespacho .wrpCols .cLeft{
+/*  background: pink;*/
+  font-family: "MisoRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  display: block;
+  float: left;
+  padding-top: 30px;
+  width: 398px;
+}
+
+.ventaDespacho .wrpCols .cLeft .t_despacho{
+  display: block;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa{
+  display: block;
+  padding-left: 20px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa > p{
+  display: block;
+  padding: 25px 0px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .selectLima{
+  background: transparent url(images/despacho/arrow_blue.jpg) no-repeat 100% 50%;
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #a6a8ab;
+  line-height: 32px;
+  cursor: pointer;
+  display: block;
+  border: 1px #0072ce solid;
+  margin-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 33px;
+  width: 220px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .contSelectLima {
+  z-index: 10;
+  display: none;
+  position: relative;
+  top: -7px;
+  left: 0;
+  height: 65px;
+  width: 220px;
+  border: 1px #0072ce solid;
+  background-color: white;
+  padding: 0px 10px 10px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .contSelectProvincia {
+  z-index: 10;
+  display: none;
+  position: relative;
+  top: -7px;
+  left: 0;
+  height: 130px;
+  width: 220px;
+  border: 1px #dd0021 solid;
+  background-color: white;
+  padding: 10px 10px 10px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.contSelectLima .txtSelect, .contSelectProvincia .txtSelect {
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #868d95;
+  cursor: pointer;
+  display: block;
+  padding: 3px 0;
+  outline: none;
+  width: 247px;
+}
+
+.contSelectLima ul li, .contSelectProvincia ul li {
+  display: block;
+  text-align: left;
+  padding: 5px 10px;
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  -ms-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.contSelectLima ul li:hover , .contSelectProvincia ul li:hove {
+  background-color: rgb(240, 240, 240);
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .resultLima{
+  display: none;
+  border: 1px #0072ce solid;
+  margin-bottom: 6px;
+  padding: 14px;
+  width: 220px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .resultLima .itemNom,
+.ventaDespacho .wrpCols .cLeft .contDepa .resultProvincia .itemNom{
+  display: block;
+  padding-bottom: 14px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .resultLima .itemNom h5{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #0072ce;
+  display: block;
+  padding-bottom: 3px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .resultLima.active .wrpScroll,
+.ventaDespacho .wrpCols .cLeft .contDepa .resultProvincia.active .wrpScroll{
+  display: block;
+  height: 100px;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .selectProvincia{
+  background: transparent url(images/despacho/arrow_red.jpg) no-repeat 100% 50%;
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #a6a8ab;
+  line-height: 32px;
+  cursor: pointer;
+  display: block;
+  border: 1px #dd0021 solid;
+  margin-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 33px;
+  width: 220px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .resultProvincia{
+  display: none;
+  border: 1px #dd0021 solid;
+  margin-bottom: 6px;
+  padding: 14px;
+  width: 220px;
+}
+
+.ventaDespacho .wrpCols .cLeft .contDepa .resultProvincia .itemNom h5{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #dd0021;
+  display: block;
+  padding-bottom: 3px;
+}
+
+.ventaDespacho .wrpCols .cRight{
+/*  background: green;*/
+  display: block;
+  float: left;
+  width: 337px;
+}
+
+.ventaDespacho .wrpCols .cRight img{
+  display: block;
+  margin: 0 auto;
+}
+
+/*********************************************************************
+*** PREGUNTAS ********************************************************
+*********************************************************************/
+.ventaPreguntas{
+  background: #fff;
+  display: block;
+}
+
+.ventaPreguntas .banPreguntas{
+  background: transparent url(../css/images/preguntas/banner.jpg) no-repeat 50% 0%;
+  display: block;
+  height: 266px;
+}
+
+.ventaPreguntas .banPreguntas img{
+  display: none;
+  height: auto;
+  width: 100%;
+}
+
+/* - ACCORDION - */
+.ventaPreguntas .modAccordion{
+  font-family: "MisoRegular", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333333;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 545px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord{
+  display: block;
+  border-bottom: 1px #dd0021 dashed;
+  padding-bottom: 10px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord h5{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 23px;
+  color: #0072ce;
+  cursor: pointer;
+  display: block;
+  padding: 20px 30px 10px 0px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord h5.icoPlus{
+  background: transparent url(../images/preguntas/ico_plus.png) no-repeat 98% 22px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord h5.icoClose{
+  background: transparent url(../images/preguntas/ico_close.png) no-repeat 98% 22px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord p{
+  display: block;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord p span{
+  font-family: "MisoBold", Arial, Helvetica, sans-serif;
+  display: block;
+  padding-top: 10px;
+}
+
+.ventaPreguntas .modAccordion .itemAccord p a{
+  color: #dd0021;
+  text-decoration: none;
+}
+
+.ventaPreguntas .modAccordion .itemAccord p a:hover{
+  text-decoration: underline;
+}
+
+.ventaPreguntas .modAccordion .itemAccord.none{
+  border-bottom: 0;
+
+}
+
+/*********************************************************************
+*** CLEAR FIX ********************************************************
+*********************************************************************/
+.clear{
+  clear: both;
+}
+
+/*********************************************************************
+*** VERSIÓN: TABLET / MOVIL (MEDIA-QUERIES) **************************
+*********************************************************************/
+@media (width: 1366px) and (max-height: 668px){
+
+
+
+}
+
+@media (max-width: 1000px){
+
+  .wrpVenta{
+    width: auto;
+  }
+
+  .ventaMenu{
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+  }
+
+}
+
+@media (max-width: 900px){
+
+  .ventaBeneficios .ventaSlider .contSlider{
+    top: 100px;
+  }
+
+}
+
+@media (max-width: 780px){
+
+  .ventaMenu{
+    background: #fff;
+  }
+
+  .ventaBanner .banWeb{
+    width: 90%;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider{
+    top: 50px;
+  }
+
+  .ventaDespacho .wrpCols{
+    width: 654px;
+  }
+
+  .ventaDespacho .wrpCols .cLeft{
+    width: 315px;
+  }
+
+}
+
+@media (max-width: 660px){
+
+  .ventaBeneficios .ventaSlider{
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .ventaBeneficios .ventaSlider .picWeb{
+    display: none;
+  }
+
+  .ventaBeneficios .ventaSlider .picMov{
+    display: block;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider{
+    top: 20%;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .paginator{
+    display: none;
+  }
+
+  .ventaBeneficios .ventaSlider .groupBtn{
+    display: block;
+    height: 29px;
+    width: 80px;
+    margin-left: -40px;
+    position: absolute;
+    left: 50%;
+    bottom: 162px;
+  }
+
+  .ventaBeneficios .ventaSlider .groupBtn .btnPrev{
+    float: left;
+    margin-top: 0;
+    margin-right: 20px;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .ventaBeneficios .ventaSlider .groupBtn .btnNext{
+    float: left;
+    margin-top: 0;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .ventaDespacho .wrpCols{
+    padding: 34px 0px;
+    width: auto;
+  }
+
+  .ventaDespacho .wrpCols .cLeft{
+    margin: 0 auto;
+    float: none;
+    padding-top: 0;
+  }
+
+  .ventaDespacho .wrpCols .cLeft .t_despacho{
+    margin: 0 auto;
+  }
+
+  .ventaDespacho .wrpCols .cLeft .contDepa{
+    padding-left: 0;
+  }
+
+  .ventaDespacho .wrpCols .cLeft .contDepa > p{
+    text-align: center;
+  }
+
+  .ventaDespacho .wrpCols .cLeft .contDepa .selectLima,
+  .ventaDespacho .wrpCols .cLeft .contDepa .resultLima,
+  .ventaDespacho .wrpCols .cLeft .contDepa .selectProvincia,
+  .ventaDespacho .wrpCols .cLeft .contDepa .resultProvincia{
+    margin: 0 auto 5px auto;
+  }
+
+  .ventaDespacho .wrpCols .cRight{
+    margin: 0 auto;
+    float: none;
+    padding-top: 20px;
+    width: 300px;
+  }
+
+  .ventaDespacho .wrpCols .cRight img{
+    height: auto;
+    width: 100%;
+  }
+
+  .ventaPreguntas .modAccordion{
+    width: 90%;
+  }
+
+  .ventaDespacho .wrpCols .cLeft .contDepa .contSelectLima{
+    left: 23px;
+  }
+
+  .ventaDespacho .wrpCols .cLeft .contDepa .contSelectProvincia{
+    left: 23px;
+  }
+
+}
+
+@media (max-width: 550px){
+
+  .wrpVenta{
+    padding-top: 0;
+  }
+
+  .ventaMenu{
+    display: none;
+  }
+
+  .ventaIntro{
+    padding: 25px 0px;
+  }
+
+  .ventaIntro span{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ventaIntro p{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .ventaIntro p br{
+    display: none;
+  }
+
+  .ventaBanner{
+    padding: 30px 0px;
+  }
+
+  .ventaBanner .banWeb{
+    display: none;
+  }
+
+  .ventaBanner .banMov{
+    display: block;
+    width: 80%;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .groupCols{
+    padding-top: 20px;
+    width: auto;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .groupCols .colPic{
+    float: none;
+    padding-top: 0;
+    width: auto;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .groupCols .colPic img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100px;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .groupCols .colCont{
+    margin: 0 auto;
+    float: none;
+    height: auto;
+    width: 240px;
+    padding-bottom: 10px;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .groupCols .colCont h4{
+    font-size: 22px;
+    padding: 10px 0px 24px 0px;
+  }
+
+  .ventaBeneficios .ventaSlider .contSlider .groupCols .colCont p,
+  .ventaBeneficios .ventaSlider .contSlider .groupCols .colCont p.special{
+    padding-right: 0;
+    text-align: justify;
+  }
+
+  .ventaPreguntas .banPreguntas{
+    background: none;
+    height: auto;
+  }
+
+  .ventaPreguntas .banPreguntas img{
+    display: block;
+  }
+
+}
+
+@media (max-width: 420px){
+
+  .ventaIntro p{
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .ventaIntro span{
+    font-size: 22px;
+    padding: 12px 40px 0px 40px;
+  }
+
+  .ventaPreguntas .modAccordion{
+    font-size: 16px;
+  }
+
+  .ventaPreguntas .modAccordion .itemAccord h5{
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+}
+
+@media (max-width: 360px){
+
+  .ventaIntro span{
+    padding: 12px 20px 0px 20px;
+  }
+
+  .ventaIntro p{
+    padding: 8px 15px 0px 15px;
+  }
+
+  .ventaBanner .banMov{
+    width: 90%;
+  }
+
+  .ventaBeneficios .ventaSlider{
+    height: 540px;
+  }
+
+  .ventaBeneficios .ventaSlider .groupBtn{
+    bottom: 106px;
+  }
+
+}
